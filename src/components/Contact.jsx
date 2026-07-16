@@ -105,7 +105,7 @@ function Contact() {
                                             Telefon
                                         </p>
 
-                                        <p>+49 176 64177557</p>
+                                        <p>+49-155-65640958</p>
                                     </div>
                                 </div>
 
@@ -117,7 +117,7 @@ function Contact() {
                                             E-Mail
                                         </p>
 
-                                        <p>info@kindakli-elektrotechnik.de</p>
+                                        <p>kontakt@kindakli-elektro.de</p>
                                     </div>
                                 </div>
 
@@ -129,7 +129,7 @@ function Contact() {
                                             Adresse
                                         </p>
 
-                                        <p>Stuttgart, Deutschland</p>
+                                        <p>13469 Berlin, Deutschland</p>
                                     </div>
                                 </div>
 
@@ -141,7 +141,7 @@ function Contact() {
                                             Öffnungszeiten
                                         </p>
 
-                                        <p>Mo – Fr: 07:00 – 17:00 Uhr</p>
+                                        <p>Mo – Fr: 08:00 – 18:00 Uhr</p>
                                     </div>
                                 </div>
                             </div>

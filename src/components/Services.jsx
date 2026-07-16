@@ -57,7 +57,7 @@ function Services() {
 
                 {/* CARDS */}
 
-                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}

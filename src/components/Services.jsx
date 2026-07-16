@@ -28,16 +28,6 @@ const services = [
         title: "Sprechanlagen",
         text: "Installation und Wartung von Türsprech- und Videosprechanlagen.",
     },
-    {
-        icon: <Network size={34} />,
-        title: "Netzwerktechnik",
-        text: "Professionelle Netzwerkverkabelung für Zuhause und Unternehmen.",
-    },
-    {
-        icon: <ShieldCheck size={34} />,
-        title: "Kundendienst",
-        text: "Wartung, Service und schnelle Hilfe bei Störungen.",
-    },
 ];
 
 function Services() {

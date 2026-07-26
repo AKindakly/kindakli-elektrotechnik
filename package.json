@@ -1,5 +1,13 @@
 {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
     "name": "kindakli-elektrotechnik",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Berlin",
+        "postalCode": "13469",
+        "addressCountry": "DE"
+    },
     "private": true,
     "version": "0.0.0",
     "type": "module",

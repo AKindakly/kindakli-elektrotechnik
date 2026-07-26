@@ -93,6 +93,13 @@ function Contact() {
                                     onSubmit={handleSubmit(onSubmit)}
                                     className="space-y-6"
                                 >
+                                    <input
+                                        type="text"
+                                        name="website"
+                                        tabIndex="-1"
+                                        autoComplete="off"
+                                        className="hidden"
+                                    />
                                     <FloatingInput
                                         icon={<User size={18} />}
                                         label="Ihr Name"
@@ -188,7 +195,7 @@ focus:ring-yellow-400/20
         gap-3
         hover:bg-yellow-300
         transition-all
-        duration-300
+        duration-600
         disabled:opacity-60
         disabled:cursor-not-allowed
     "
@@ -222,9 +229,9 @@ focus:ring-yellow-400/20
                                     initial={{ opacity: 0, scale: 0.95 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 0.5 }}
-                                    className="bg-neutral-900 border border-yellow-400/30 p-13 text-center"
+                                    className="bg-neutral-900 border border-yellow-400/30 p-12 text-center"
                                 >
-                                    <div className="bg-neutral-900 border border-yellow-400/30 p-13 text-center">
+                                    <div className="bg-neutral-900 border border-yellow-400/30 p-12 text-center">
                                         <div
                                             className="
     mx-auto

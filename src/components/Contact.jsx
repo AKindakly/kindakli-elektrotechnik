@@ -12,7 +12,7 @@ import {
 
 import { motion, AnimatePresence } from "framer-motion";
 
-import { useState } from "react";
+import { useState, useWatch } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -24,7 +24,7 @@ function Contact() {
     const {
         register,
         handleSubmit,
-        watch,
+        control,
         formState: { errors, isSubmitting },
     } = useForm({
         resolver: zodResolver(contactSchema),
@@ -55,7 +55,11 @@ function Contact() {
         }
     }
 
-    const messageValue = watch("message", "");
+    const messageValue = useWatch({
+        control,
+        name: "message",
+        defaultValue: "",
+    });
     return (
         <section
             id="contact"

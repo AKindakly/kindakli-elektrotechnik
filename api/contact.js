@@ -15,7 +15,7 @@ export default async function handler(req, res) {
         await resend.emails.send({
             from: "Kindakli Elektrotechnik <kontakt@kindakli-elektro.de>",
 
-            to: "kindakli.elektro@gmail.de",
+            to: "kindakli.elektro@gmail.com",
 
             subject: "Neue Kontaktanfrage - Kindakli Elektrotechnik",
 

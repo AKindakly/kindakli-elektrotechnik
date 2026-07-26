@@ -1,6 +1,45 @@
-import { User, Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import {
+    User,
+    Mail,
+    Phone,
+    MapPin,
+    Clock,
+    Send,
+    Wrench,
+    CircleCheckBig,
+    LoaderCircle,
+} from "lucide-react";
+
+import { motion, AnimatePresence } from "framer-motion";
+
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+import { contactSchema } from "../validation/contactSchema";
+import FloatingInput from "./FloatingInput";
+import FloatingTextarea from "./FloatingTextarea";
 
 function Contact() {
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors, isSubmitting },
+    } = useForm({
+        resolver: zodResolver(contactSchema),
+    });
+
+    const [isSuccess, setIsSuccess] = useState(false);
+
+    async function onSubmit(data) {
+        console.log(data);
+
+        await new Promise((resolve) => setTimeout(resolve, 1800));
+
+        setIsSuccess(true);
+    }
+    const messageValue = watch("message", "");
     return (
         <section
             id="contact"
@@ -27,64 +66,183 @@ function Contact() {
                 <div className="grid lg:grid-cols-3 gap-24">
                     {/* FORM */}
                     <div className="lg:col-span-2">
-                        <form className="space-y-6">
-                            <div className="relative">
-                                <User
-                                    size={18}
-                                    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"
-                                />
+                        <AnimatePresence mode="wait">
+                            {!isSuccess ? (
+                                <motion.form
+                                    key="contact-form"
+                                    initial={{ opacity: 0, y: 25 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -25 }}
+                                    transition={{ duration: 0.4 }}
+                                    onSubmit={handleSubmit(onSubmit)}
+                                    className="space-y-6"
+                                >
+                                    <FloatingInput
+                                        icon={<User size={18} />}
+                                        label="Ihr Name"
+                                        name="name"
+                                        register={register}
+                                        error={errors.name}
+                                    />
+                                    <FloatingInput
+                                        icon={<Mail size={18} />}
+                                        label="Ihre E-Mail"
+                                        type="email"
+                                        name="email"
+                                        register={register}
+                                        error={errors.email}
+                                    />
+                                    {/* <FloatingInput
+                                icon={<Phone size={18} />}
+                                label="Telefon (optional)"
+                                name="phone"
+                                register={register}
+                                error={errors.phone}
+                            /> */}
+                                    <div>
+                                        <label className="block mb-2 text-sm text-gray-400">
+                                            Art des Projekts
+                                        </label>
 
-                                <input
-                                    type="text"
-                                    placeholder="Ihr Name"
-                                    className="w-full bg-neutral-900 border border-neutral-800 py-4 pl-12 pr-4 outline-none focus:border-yellow-400 transition"
-                                />
-                            </div>
+                                        <div className="relative">
+                                            <Wrench
+                                                size={18}
+                                                className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"
+                                            />
 
-                            <div className="relative">
-                                <Mail
-                                    size={18}
-                                    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"
-                                />
+                                            <select
+                                                {...register("project")}
+                                                className="
+                w-full
+                bg-neutral-900
+                border
+                border-neutral-700
+                pl-12
+                pr-4
+                py-4
+                focus:border-yellow-400
+focus:ring-2
+focus:ring-yellow-400/20
+                outline-none
+                transition
+            "
+                                            >
+                                                <option value="">
+                                                    Bitte auswählen
+                                                </option>
+                                                <option>Neubau</option>
+                                                <option>Renovierung</option>
+                                                <option>Reparatur</option>
+                                                <option>Beleuchtung</option>
+                                                <option>Sonstiges</option>
+                                            </select>
+                                        </div>
 
-                                <input
-                                    type="email"
-                                    placeholder="Ihre E-Mail"
-                                    className="w-full bg-neutral-900 border border-neutral-800 py-4 pl-12 pr-4 outline-none focus:border-yellow-400 transition"
-                                />
-                            </div>
+                                        {errors.project && (
+                                            <p className="text-red-400 text-sm mt-2">
+                                                {errors.project.message}
+                                            </p>
+                                        )}
+                                    </div>
+                                    <div>
+                                        <FloatingTextarea
+                                            icon={<Mail size={18} />}
+                                            label="Ihre Nachricht"
+                                            name="message"
+                                            register={register}
+                                            error={errors.message}
+                                        />
 
-                            <div className="relative">
-                                <Phone
-                                    size={18}
-                                    className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"
-                                />
+                                        <p className="text-right text-xs text-gray-500 mt-2">
+                                            {messageValue.length}/1000
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        disabled={isSubmitting}
+                                        className="
+        group
+        bg-yellow-400
+        text-black
+        font-semibold
+        px-8
+        py-4
+        flex
+        items-center
+        gap-3
+        hover:bg-yellow-300
+        transition-all
+        duration-300
+        disabled:opacity-60
+        disabled:cursor-not-allowed
+    "
+                                    >
+                                        {isSubmitting ? (
+                                            <>
+                                                Wird gesendet...
+                                                <LoaderCircle
+                                                    size={18}
+                                                    className="animate-spin"
+                                                />
+                                            </>
+                                        ) : (
+                                            <>
+                                                Nachricht senden
+                                                <Send
+                                                    size={18}
+                                                    className="
+            transition-transform
+            duration-300
+            group-hover:translate-x-1
+            "
+                                                />
+                                            </>
+                                        )}
+                                    </button>
+                                </motion.form>
+                            ) : (
+                                <motion.div
+                                    key="success-message"
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="bg-neutral-900 border border-yellow-400/30 p-13 text-center"
+                                >
+                                    <div className="bg-neutral-900 border border-yellow-400/30 p-13 text-center">
+                                        <div
+                                            className="
+    mx-auto
+    mb-6
+    w-20
+    h-20
+    flex
+    items-center
+    justify-center
+    bg-yellow-400/10
+"
+                                        >
+                                            <CircleCheckBig
+                                                size={50}
+                                                className="text-yellow-400"
+                                            />
+                                        </div>
+                                        <h3 className="text-3xl font-bold mb-4">
+                                            Vielen Dank!
+                                        </h3>
 
-                                <input
-                                    type="text"
-                                    placeholder="Ihre Telefonnummer"
-                                    className="w-full bg-neutral-900 border border-neutral-800 py-4 pl-12 pr-4 outline-none focus:border-yellow-400 transition"
-                                />
-                            </div>
+                                        <p className="text-gray-400">
+                                            Ihre Anfrage wurde erfolgreich
+                                            gesendet.
+                                        </p>
 
-                            <div className="relative">
-                                <Mail
-                                    size={18}
-                                    className="absolute left-4 top-6 text-gray-500"
-                                />
-
-                                <textarea
-                                    rows="6"
-                                    placeholder="Ihre Nachricht"
-                                    className="w-full bg-neutral-900 border border-neutral-800 py-4 pl-12 pr-4 outline-none resize-none focus:border-yellow-400 transition"
-                                />
-                            </div>
-
-                            <button className="bg-yellow-400 text-black font-semibold px-8 py-4 hover:bg-yellow-300 transition-all hover:scale-105 duration-200 flex items-center gap-2">
-                                Nachricht senden
-                                <Send size={18} />
-                            </button>
-                        </form>
+                                        <p className="text-gray-400 mt-2">
+                                            Wir melden uns schnellstmöglich bei
+                                            Ihnen.
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </div>
 
                     {/* CONTACT CARD */}

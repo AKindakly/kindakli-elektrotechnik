@@ -33,12 +33,28 @@ function Contact() {
     const [isSuccess, setIsSuccess] = useState(false);
 
     async function onSubmit(data) {
-        console.log(data);
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
 
-        await new Promise((resolve) => setTimeout(resolve, 1800));
+            if (!response.ok) {
+                throw new Error("Fehler beim Senden.");
+            }
 
-        setIsSuccess(true);
+            setIsSuccess(true);
+        } catch (error) {
+            console.error(error);
+            alert(
+                "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+            );
+        }
     }
+
     const messageValue = watch("message", "");
     return (
         <section

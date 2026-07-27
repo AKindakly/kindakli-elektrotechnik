@@ -44,6 +44,22 @@ function Impressum() {
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
+                            Verantwortlich für den Inhalt
+                        </h2>
+
+                        <p>
+                            Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+                            <br />
+                            Mohammed Kindakli
+                            <br />
+                            Todtnauer Zeile 1
+                            <br />
+                            13469 Berlin
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-white font-semibold mb-2">
                             Gewerbeanmeldung
                         </h2>
 
@@ -66,11 +82,11 @@ function Impressum() {
                             Blücherstraße 68, 10961 Berlin
                         </p>
 
-                        {/* <p className="mt-3">
+                        <p className="mt-3">
                             Eintragung in die Handwerksrolle:
                             <br />
                             [Handwerksrollennummer]
-                        </p> */}
+                        </p>
 
                         <p className="mt-3">
                             Berufsbezeichnung: Elektrotechniker

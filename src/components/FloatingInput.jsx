@@ -21,9 +21,11 @@ function FloatingInput({ icon, label, type = "text", register, name, error }) {
 
                 {/* INPUT */}
                 <input
+                    id={name}
                     type={type}
                     placeholder=" "
                     {...register(name)}
+                    aria-invalid={error ? "true" : "false"}
                     className={`
                         peer
                         w-full
@@ -46,11 +48,12 @@ function FloatingInput({ icon, label, type = "text", register, name, error }) {
 
                 {/* LABEL */}
                 <label
+                    htmlFor={name}
                     className="
                     absolute
                     left-12
                     top-4
-                    text-gray-500
+                    text-gray-400
                     transition-all
                     duration-300
                     pointer-events-none

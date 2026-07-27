@@ -6,9 +6,11 @@ function FloatingTextarea({ icon, label, register, name, error }) {
             <div className="absolute left-4 top-5 text-gray-500">{icon}</div>
 
             <textarea
+                id={name}
                 rows="6"
                 placeholder=" "
                 {...register(name)}
+                aria-invalid={error ? "true" : "false"}
                 className={`
                     peer
                     w-full
@@ -31,11 +33,12 @@ function FloatingTextarea({ icon, label, register, name, error }) {
             />
 
             <label
+                htmlFor={name}
                 className="
                     absolute
                     left-12
                     top-4
-                    text-gray-500
+                    text-gray-400
                     transition-all
                     duration-300
                     pointer-events-none

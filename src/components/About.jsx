@@ -42,9 +42,9 @@ function About() {
                                 className="text-yellow-400"
                             />
                             <div>
-                                <h4 className="font-semibold">
+                                <h3 className="font-semibold">
                                     Zuverlässig & Präzise
-                                </h4>
+                                </h3>
                                 <p className="text-gray-400 text-sm">
                                     Termintreue und saubere Arbeit stehen im
                                     Fokus.
@@ -55,9 +55,9 @@ function About() {
                         <div className="flex items-center gap-5">
                             <Crown size={40} className="text-yellow-400" />
                             <div>
-                                <h4 className="font-semibold">
+                                <h3 className="font-semibold">
                                     Höchste Qualität
-                                </h4>
+                                </h3>
                                 <p className="text-gray-400 text-sm">
                                     Wir arbeiten nur mit hochwertigen
                                     Materialien und modernen Standards.
@@ -68,9 +68,9 @@ function About() {
                         <div className="flex items-center gap-5">
                             <UsersRound size={40} className="text-yellow-400" />
                             <div>
-                                <h4 className="font-semibold">
+                                <h3 className="font-semibold">
                                     Kundenorientiert
-                                </h4>
+                                </h3>
                                 <p className="text-gray-400 text-sm">
                                     Ihre Zufriedenheit ist unser Anspruch. Wir
                                     hören zu und finden die beste Lösung.

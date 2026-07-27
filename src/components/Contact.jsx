@@ -124,7 +124,10 @@ function Contact() {
                                 error={errors.phone}
                             /> */}
                                     <div>
-                                        <label className="block mb-2 text-sm text-gray-400">
+                                        <label
+                                            htmlFor="project"
+                                            className="block mb-2 text-sm text-gray-400"
+                                        >
                                             Art des Projekts
                                         </label>
 
@@ -135,6 +138,7 @@ function Contact() {
                                             />
 
                                             <select
+                                                id="project"
                                                 {...register("project")}
                                                 className="
                 w-full
@@ -177,7 +181,7 @@ focus:ring-yellow-400/20
                                             error={errors.message}
                                         />
 
-                                        <p className="text-right text-xs text-gray-500 mt-2">
+                                        <p className="text-right text-xs text-gray-400 mt-2">
                                             {messageValue.length}/1000
                                         </p>
                                     </div>
@@ -224,7 +228,7 @@ focus:ring-yellow-400/20
                                         )}
                                     </button>
 
-                                    <p className="text-xs text-gray-500">
+                                    <p className="text-xs text-gray-400">
                                         Mit dem Absenden stimmen Sie der
                                         Verarbeitung Ihrer Daten gemäß unserer{" "}
                                         <Link

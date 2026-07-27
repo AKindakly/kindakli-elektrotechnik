@@ -17,7 +17,7 @@ function Footer() {
                 </div>
 
                 {/* Inline Copyright + Legal Links */}
-                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-500">
+                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-400">
                     <span>
                         © {new Date().getFullYear()} Kindakli Elektrotechnik
                     </span>

@@ -39,12 +39,12 @@ function Footer() {
                             Datenschutz
                         </Link>
 
-                        <a
+                        {/* <a
                             href="#"
                             className="hover:text-yellow-400 transition"
                         >
                             Cookie-Richtlinie
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

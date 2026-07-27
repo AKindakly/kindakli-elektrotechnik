@@ -59,9 +59,33 @@ function Impressum() {
                         </h2>
 
                         <p>
-                            Umsatzsteuer-Identifikationsnummer gemäß §27a UStG:
+                            Umsatzsteuer-Identifikationsnummer gemäß §27a
+                            Umsatzsteuergesetz:
                             <br />
                             Nicht vorhanden.
+                        </p>
+
+                        <p className="mt-3">
+                            Sofern eine Steuernummer vorhanden ist, wird diese
+                            nicht öffentlich auf dieser Website angegeben.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-white font-semibold mb-2">
+                            Haftung für Inhalte
+                        </h2>
+
+                        <p>
+                            Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für
+                            eigene Inhalte auf diesen Seiten nach den
+                            allgemeinen Gesetzen verantwortlich.
+                        </p>
+
+                        <p>
+                            Wir übernehmen jedoch keine Gewähr für die
+                            Vollständigkeit, Richtigkeit und Aktualität der
+                            Inhalte.
                         </p>
                     </div>
                 </div>

@@ -310,7 +310,10 @@ focus:ring-yellow-400/20
                                             Adresse
                                         </p>
 
-                                        <p>13469 Berlin, Deutschland</p>
+                                        <p>
+                                            Todtnauer Zeile 1
+                                            <br /> 13469 Berlin, Deutschland
+                                        </p>
                                     </div>
                                 </div>
 

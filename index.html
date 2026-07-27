@@ -50,6 +50,7 @@
         <meta property="og:url" content="https://kindakli-elektro.de" />
 
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="de_DE" />
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
@@ -67,6 +68,70 @@
         />
 
         <meta name="robots" content="index, follow" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": ["LocalBusiness", "Electrician"],
+                "name": "Kindakli Elektrotechnik",
+
+                "url": "https://kindakli-elektro.de",
+
+                "logo": "https://kindakli-elektro.de/logo.png",
+
+                "image": "https://kindakli-elektro.de/og-image.jpg",
+
+                "telephone": "+49-155-65640958",
+
+                "email": "kontakt@kindakli-elektro.de",
+
+                "description": "Professionelle Elektroinstallationen, Sanierungen und Elektrotechnik in Berlin.",
+
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Todtnauer Zeile 1",
+                    "postalCode": "13469",
+                    "addressLocality": "Berlin",
+                    "addressCountry": "DE"
+                },
+
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Berlin"
+                },
+
+                "openingHours": ["Mo-Fr 08:00-18:00"],
+
+                "makesOffer": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Elektroinstallationen"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Elektrosanierung"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Beleuchtung"
+                        }
+                    }
+                ],
+
+                "priceRange": "€€",
+
+                "inLanguage": "de-DE"
+            }
+        </script>
 
         <script type="module" src="/src/main.jsx"></script>
     </head>

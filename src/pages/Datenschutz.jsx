@@ -26,8 +26,8 @@ function Datenschutz() {
                         <p>
                             Kindakli Elektrotechnik
                             <br />
-                            Musterstraße 1<br />
-                            12345 Stuttgart
+                            Todtnauer Zeile 1<br />
+                            13469 Berlin
                             <br />
                             Deutschland
                         </p>

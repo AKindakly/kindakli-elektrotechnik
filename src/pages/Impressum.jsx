@@ -14,8 +14,8 @@ function Impressum() {
                         <p>
                             Kindakli Elektrotechnik
                             <br />
-                            Musterstraße 1<br />
-                            12345 Stuttgart
+                            Todtnauer Zeile 1<br />
+                            13469 Berlin
                             <br />
                             Deutschland
                         </p>
@@ -26,9 +26,9 @@ function Impressum() {
                             Kontakt
                         </h2>
                         <p>
-                            Telefon: +49 176 64177557
+                            Telefon: +49-155-65640958
                             <br />
-                            E-Mail: info@kindakli-elektrotechnik.de
+                            E-Mail: kontakt@kindakli-elektro.de
                         </p>
                     </div>
 

@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -222,6 +223,18 @@ focus:ring-yellow-400/20
                                             </>
                                         )}
                                     </button>
+
+                                    <p className="text-xs text-gray-500">
+                                        Mit dem Absenden stimmen Sie der
+                                        Verarbeitung Ihrer Daten gemäß unserer{" "}
+                                        <Link
+                                            to="/datenschutz"
+                                            className="text-yellow-400 hover:underline"
+                                        >
+                                            Datenschutzerklärung
+                                        </Link>{" "}
+                                        zu.
+                                    </p>
                                 </motion.form>
                             ) : (
                                 <motion.div

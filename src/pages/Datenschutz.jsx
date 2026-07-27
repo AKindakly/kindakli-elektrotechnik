@@ -55,10 +55,30 @@ function Datenschutz() {
                         </h2>
 
                         <p>
-                            Diese Website wird über Vercel Inc. gehostet. Beim
-                            Besuch der Website können technische Daten wie
-                            IP-Adresse, Browserinformationen und Zeitpunkt des
-                            Zugriffs verarbeitet werden.
+                            Diese Website wird über Vercel Inc., 340 S Lemon Ave
+                            #4133, Walnut, CA 91789, USA, gehostet. Beim Besuch
+                            der Website können technische Daten wie IP-Adresse,
+                            Browserinformationen und Zeitpunkt des Zugriffs
+                            verarbeitet werden.
+                        </p>
+
+                        <p className="mt-3">
+                            Da Vercel Inc. ihren Sitz in den USA hat, kann es im
+                            Rahmen der Verarbeitung zu einer Übermittlung
+                            personenbezogener Daten in ein Drittland kommen.
+                            Diese Übermittlung erfolgt auf Grundlage von
+                            Standardvertragsklauseln der EU-Kommission bzw. im
+                            Rahmen des EU-US Data Privacy Framework, soweit
+                            Vercel Inc. diesem beigetreten ist. Mit Vercel Inc.
+                            besteht ein Auftragsverarbeitungsvertrag gemäß Art.
+                            28 DSGVO.
+                        </p>
+
+                        <p className="mt-3">
+                            Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1
+                            lit. f DSGVO (berechtigtes Interesse an einer
+                            technisch fehlerfreien und sicheren Bereitstellung
+                            der Website).
                         </p>
                     </div>
 
@@ -69,13 +89,40 @@ function Datenschutz() {
 
                         <p>
                             Wenn Sie uns über das Kontaktformular kontaktieren,
-                            werden die von Ihnen eingegebenen Daten zur
-                            Bearbeitung Ihrer Anfrage verarbeitet.
+                            werden die von Ihnen eingegebenen Daten (Name,
+                            E-Mail-Adresse, ausgewählte Projektart und Ihre
+                            Nachricht) zur Bearbeitung Ihrer Anfrage
+                            verarbeitet.
+                        </p>
+
+                        <p className="mt-3">
+                            Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs.
+                            1 lit. b DSGVO, sofern Ihre Anfrage der Anbahnung
+                            eines Vertrags dient, andernfalls Art. 6 Abs. 1 lit.
+                            f DSGVO (berechtigtes Interesse an der Bearbeitung
+                            und Beantwortung Ihrer Anfrage).
                         </p>
 
                         <p className="mt-3">
                             Die Übermittlung der Nachrichten erfolgt über den
-                            Dienst Resend.
+                            Dienst Resend (Resend, Inc., San Francisco, CA,
+                            USA). Auch hier kann es zu einer Übermittlung
+                            personenbezogener Daten in die USA kommen; diese
+                            erfolgt auf Grundlage von Standardvertragsklauseln
+                            bzw. des EU-US Data Privacy Framework, soweit
+                            Resend, Inc. diesem beigetreten ist, sowie auf
+                            Grundlage eines mit Resend, Inc. bestehenden
+                            Auftragsverarbeitungsvertrags.
+                        </p>
+
+                        <p className="mt-3">
+                            Die im Kontaktformular eingegebenen Daten werden
+                            gelöscht, sobald Ihre Anfrage abschließend
+                            bearbeitet wurde und keine gesetzlichen
+                            Aufbewahrungspflichten entgegenstehen. Kommt es im
+                            Anschluss an Ihre Anfrage zu einem Vertrag, gelten
+                            die gesetzlichen handels- und steuerrechtlichen
+                            Aufbewahrungsfristen (in der Regel 6 bzw. 10 Jahre).
                         </p>
 
                         <p className="mt-3">
@@ -121,7 +168,20 @@ function Datenschutz() {
                             Sie haben das Recht auf Auskunft, Berichtigung,
                             Löschung, Einschränkung der Verarbeitung sowie
                             Widerspruch gegen die Verarbeitung Ihrer
-                            personenbezogenen Daten.
+                            personenbezogenen Daten. Zudem steht Ihnen ein Recht
+                            auf Datenübertragbarkeit zu.
+                        </p>
+
+                        <p className="mt-3">
+                            Darüber hinaus haben Sie das Recht, sich bei einer
+                            Datenschutzaufsichtsbehörde über die Verarbeitung
+                            Ihrer personenbezogenen Daten durch uns zu
+                            beschweren. Zuständig ist:
+                            <br />
+                            Berliner Beauftragte für Datenschutz und
+                            Informationsfreiheit
+                            <br />
+                            Friedrichstr. 219, 10969 Berlin
                         </p>
                     </div>
 

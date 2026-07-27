@@ -55,6 +55,46 @@ function Impressum() {
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
+                            Berufsrechtliche Angaben
+                        </h2>
+
+                        <p>
+                            Zuständige Handwerkskammer:
+                            <br />
+                            Handwerkskammer Berlin
+                            <br />
+                            Blücherstraße 68, 10961 Berlin
+                        </p>
+
+                        <p className="mt-3">
+                            Eintragung in die Handwerksrolle:
+                            <br />
+                            [Handwerksrollennummer]
+                        </p>
+
+                        <p className="mt-3">
+                            Berufsbezeichnung: Elektrotechniker
+                            <br />
+                            Verliehen in: Deutschland
+                        </p>
+
+                        <p className="mt-3">
+                            Es gelten die berufsrechtlichen Regelungen der
+                            Handwerksordnung (HwO), einsehbar unter{" "}
+                            <a
+                                href="https://www.gesetze-im-internet.de/hwo/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-yellow-400 hover:underline"
+                            >
+                                gesetze-im-internet.de/hwo
+                            </a>
+                            .
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-white font-semibold mb-2">
                             Umsatzsteuer
                         </h2>
 
@@ -63,6 +103,11 @@ function Impressum() {
                             Umsatzsteuergesetz:
                             <br />
                             Nicht vorhanden.
+                        </p>
+
+                        <p className="mt-3">
+                            Gemäß § 19 UStG wird keine Umsatzsteuer erhoben
+                            (Kleinunternehmerregelung).
                         </p>
 
                         <p className="mt-3">
@@ -86,6 +131,18 @@ function Impressum() {
                             Wir übernehmen jedoch keine Gewähr für die
                             Vollständigkeit, Richtigkeit und Aktualität der
                             Inhalte.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-white font-semibold mb-2">
+                            Streitschlichtung
+                        </h2>
+
+                        <p>
+                            Wir sind nicht bereit oder verpflichtet, an
+                            Streitbeilegungsverfahren vor einer
+                            Verbraucherschlichtungsstelle teilzunehmen.
                         </p>
                     </div>
                 </div>

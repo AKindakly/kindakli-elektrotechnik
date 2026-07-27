@@ -6,15 +6,19 @@ function Impressum() {
                     Impressum
                 </h1>
 
-                <div className="space-y-6 text-gray-300 leading-relaxed">
+                <div className="space-y-8 text-gray-300 leading-relaxed">
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Angaben gemäß § 5 TMG
+                            Angaben gemäß § 5 DDG
                         </h2>
+
                         <p>
                             Kindakli Elektrotechnik
                             <br />
-                            Todtnauer Zeile 1<br />
+                            Mohammed Kindakli
+                            <br />
+                            Todtnauer Zeile 1
+                            <br />
                             13469 Berlin
                             <br />
                             Deutschland
@@ -25,29 +29,40 @@ function Impressum() {
                         <h2 className="text-white font-semibold mb-2">
                             Kontakt
                         </h2>
+
                         <p>
-                            Telefon: +49-155-65640958
+                            Telefon:
                             <br />
-                            E-Mail: kontakt@kindakli-elektro.de
+                            +49-155-65640958
+                            <br />
+                            <br />
+                            E-Mail:
+                            <br />
+                            kontakt@kindakli-elektro.de
                         </p>
                     </div>
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Verantwortlich für den Inhalt
+                            Gewerbeanmeldung
                         </h2>
+
                         <p>
-                            Kindakli Elektrotechnik
-                            <br />
-                            vertreten durch den Inhaber
+                            Die Gewerbeanmeldung wurde bei der zuständigen
+                            Behörde vorgenommen.
                         </p>
                     </div>
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Umsatzsteuer-ID
+                            Umsatzsteuer
                         </h2>
-                        <p>(Falls vorhanden eintragen)</p>
+
+                        <p>
+                            Umsatzsteuer-Identifikationsnummer gemäß §27a UStG:
+                            <br />
+                            Nicht vorhanden.
+                        </p>
                     </div>
                 </div>
             </div>

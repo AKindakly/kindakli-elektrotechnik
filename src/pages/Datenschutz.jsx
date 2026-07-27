@@ -1,24 +1,32 @@
-function Impressum() {
+function Datenschutz() {
     return (
         <section className="min-h-screen bg-black text-white py-20 px-6">
             <div className="max-w-4xl mx-auto">
                 <h1 className="text-4xl font-bold mb-10 text-yellow-400">
-                    Impressum
+                    Datenschutz
                 </h1>
 
                 <div className="space-y-8 text-gray-300 leading-relaxed">
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Angaben gemäß § 5 DDG
+                            1. Datenschutz auf einen Blick
                         </h2>
+                        <p>
+                            Der Schutz Ihrer persönlichen Daten ist uns wichtig.
+                            Wir behandeln Ihre personenbezogenen Daten
+                            vertraulich und entsprechend der gesetzlichen
+                            Datenschutzvorschriften.
+                        </p>
+                    </div>
 
+                    <div>
+                        <h2 className="text-white font-semibold mb-2">
+                            2. Verantwortliche Stelle
+                        </h2>
                         <p>
                             Kindakli Elektrotechnik
                             <br />
-                            Mohammed Kindakli
-                            <br />
-                            Todtnauer Zeile 1
-                            <br />
+                            Todtnauer Zeile 1<br />
                             13469 Berlin
                             <br />
                             Deutschland
@@ -27,41 +35,32 @@ function Impressum() {
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Kontakt
+                            3. Erhebung von Daten
                         </h2>
-
                         <p>
-                            Telefon:
-                            <br />
-                            +49-155-65640958
-                            <br />
-                            <br />
-                            E-Mail:
-                            <br />
-                            kontakt@kindakli-elektro.de
+                            Beim Besuch dieser Website werden automatisch
+                            technische Daten (z. B. Browser, Uhrzeit,
+                            IP-Adresse) erfasst.
                         </p>
                     </div>
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Gewerbeanmeldung
+                            4. Kontaktformular
                         </h2>
-
                         <p>
-                            Die Gewerbeanmeldung wurde bei der zuständigen
-                            Behörde vorgenommen.
+                            Wenn Sie uns per Formular kontaktieren, werden Ihre
+                            Angaben zur Bearbeitung der Anfrage gespeichert.
                         </p>
                     </div>
 
                     <div>
                         <h2 className="text-white font-semibold mb-2">
-                            Umsatzsteuer
+                            5. Ihre Rechte
                         </h2>
-
                         <p>
-                            Umsatzsteuer-Identifikationsnummer gemäß §27a UStG:
-                            <br />
-                            Nicht vorhanden.
+                            Sie haben jederzeit das Recht auf Auskunft,
+                            Berichtigung und Löschung Ihrer Daten.
                         </p>
                     </div>
                 </div>
@@ -70,4 +69,4 @@ function Impressum() {
     );
 }
 
-export default Impressum;
+export default Datenschutz;

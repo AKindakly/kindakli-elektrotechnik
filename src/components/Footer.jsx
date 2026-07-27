@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import logo from "../assets/logo.png";
 
 function Footer() {
@@ -17,25 +16,36 @@ function Footer() {
                     </h3>
                 </div>
 
-                {/* Copyright */}
-                <p className="text-center text-sm text-gray-500">
-                    © {new Date().getFullYear()} Kindakli Elektrotechnik. Alle
-                    Rechte vorbehalten.
-                </p>
+                {/* Inline Copyright + Legal Links */}
+                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-500">
+                    <span>
+                        © {new Date().getFullYear()} Kindakli Elektrotechnik
+                    </span>
 
-                {/* Legal Links */}
-                <div className="flex justify-center gap-8 mt-6 text-sm">
-                    <Link to="/impressum" className="hover:text-yellow-400">
-                        Impressum
-                    </Link>
+                    <span className="hidden sm:inline text-gray-700">|</span>
 
-                    <Link to="/datenschutz" className="hover:text-yellow-400">
-                        Datenschutz
-                    </Link>
+                    <div className="flex gap-6">
+                        <Link
+                            to="/impressum"
+                            className="hover:text-yellow-400 transition"
+                        >
+                            Impressum
+                        </Link>
 
-                    <a href="#" className="hover:text-yellow-400 transition">
-                        Cookie-Richtlinie
-                    </a>
+                        <Link
+                            to="/datenschutz"
+                            className="hover:text-yellow-400 transition"
+                        >
+                            Datenschutz
+                        </Link>
+
+                        <a
+                            href="#"
+                            className="hover:text-yellow-400 transition"
+                        >
+                            Cookie-Richtlinie
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

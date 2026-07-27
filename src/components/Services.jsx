@@ -1,11 +1,4 @@
-import {
-    Zap,
-    Wrench,
-    Lightbulb,
-    Network,
-    DoorOpen,
-    ShieldCheck,
-} from "lucide-react";
+import { Zap, Wrench, Lightbulb, DoorOpen } from "lucide-react";
 
 const services = [
     {

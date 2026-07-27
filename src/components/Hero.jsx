@@ -1,6 +1,6 @@
-import screwdriver1 from "../assets/screwdriver1.png";
-import screwdriver2 from "../assets/screwdriver2.png";
-import pliers from "../assets/pliers.png";
+import screwdriver1 from "../assets/screwdriver1.webp";
+import screwdriver2 from "../assets/screwdriver2.webp";
+import pliers from "../assets/pliers.webp";
 
 function Hero() {
     return (

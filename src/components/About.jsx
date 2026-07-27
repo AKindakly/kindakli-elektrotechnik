@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about.png";
+import aboutImg from "../assets/about.webp";
 import { UsersRound, Crown, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 

@@ -66,11 +66,11 @@ function Impressum() {
                             Blücherstraße 68, 10961 Berlin
                         </p>
 
-                        <p className="mt-3">
+                        {/* <p className="mt-3">
                             Eintragung in die Handwerksrolle:
                             <br />
                             [Handwerksrollennummer]
-                        </p>
+                        </p> */}
 
                         <p className="mt-3">
                             Berufsbezeichnung: Elektrotechniker

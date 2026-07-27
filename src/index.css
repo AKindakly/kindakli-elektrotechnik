@@ -6,6 +6,7 @@ html {
     font-family: "Inter";
     src: url("./assets/fonts/Inter-Regular.ttf") format("truetype");
     font-weight: 400;
+    font-display: swap;
 }
 
 body {

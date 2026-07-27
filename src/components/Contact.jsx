@@ -289,12 +289,12 @@ focus:ring-yellow-400/20
                     <div className="relative">
                         <div className="absolute inset-0 bg-yellow-400/10 blur-3xl " />
 
-                        <div className="relative bg-neutral-950 border border-yellow-400/30 p-10">
-                            <h3 className="text-yellow-400 font-semibold tracking-widest mb-8 uppercase">
+                        <div className="relative bg-neutral-950 border border-yellow-400/30 px-10 py-14">
+                            <h3 className="text-yellow-400 font-semibold tracking-widest mb-8 uppercase pb-6">
                                 Kontakt Informationen
                             </h3>
 
-                            <div className="space-y-10">
+                            <div className="space-y-12">
                                 <div className="flex gap-4 items-center">
                                     <Phone className="text-yellow-400" />
 

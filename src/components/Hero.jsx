@@ -50,6 +50,8 @@ function Hero() {
 
             <img
                 src={screwdriver1}
+                width="617"
+                height="1420"
                 alt="Schraubendreher"
                 className="
                     absolute
@@ -70,6 +72,8 @@ function Hero() {
             {/* LEFT TOOL 2 */}
             <img
                 src={screwdriver2}
+                width="364"
+                height="1064"
                 alt="Schraubendreher"
                 className="
                 absolute
@@ -89,6 +93,8 @@ function Hero() {
             {/* RIGHT PLIERS */}
             <img
                 src={pliers}
+                width="364"
+                height="1116"
                 alt="Zange"
                 className="
                     absolute

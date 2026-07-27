@@ -69,6 +69,8 @@ function Navbar() {
                 >
                     <img
                         src={logo}
+                        width="371"
+                        height="365"
                         alt="Kindakli Logo"
                         className="h-9 w-auto"
                     />
